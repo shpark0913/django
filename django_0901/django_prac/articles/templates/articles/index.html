@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<body>
+  <p><a href="{% url 'articles:greeting' %}">greeting</a></p>
+  <p><a href="{% url 'articles:throw' %}">throw</a></p>
+  <p><a href="{% url 'articles:catch' %}">catch</a></p>
+</body>
+<a href="{% url 'pages:index' %}">2nd index gogo</a>
+
+{% endblock content %}
